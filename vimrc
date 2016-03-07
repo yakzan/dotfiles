@@ -65,10 +65,10 @@ set backspace=indent,eol,start
 set history=1000 " change history to 1000
 set textwidth=120
 
-if has('mouse')
-    set mouse=a
+"if has('mouse')
+"    set mouse=a
     " set ttymouse=xterm2
-endif
+"endif
 
 
 " code folding settings
