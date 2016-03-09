@@ -1,0 +1,72 @@
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
+
+bind r source-file ~/.tmux.conf
+
+# easy movement between panes
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+#resize panes:
+bind -r H resize-pane -L 10
+bind -r J resize-pane -D 10
+bind -r K resize-pane -U 10
+bind -r L resize-pane -R 10
+
+# mouse
+set -g mouse-select-window on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+#set -g mouse on
+
+#set -g default-command "reattach-to-user-namespace -l zsh"
+# tmux display things in 256 colors
+set -g default-terminal "screen-256color"
+set -g status-utf8 on
+
+set -g history-limit 20000
+
+# automatically renumber tmux windows
+set -g renumber-windows on
+set -g base-index 1
+set -g pane-base-index 1
+
+#Plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'a-morales/stylux'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+#source theme.sh
+
+set -g @seperators "powerline"
+#set -g @seperators 'dithered'
+
+set -g status-left "#{prefix_highlight}"
+set -g status-right "%e %b, %H:%M | #H"
+
+set -g status-justify left
+set -g status-left-length 80
+set -g status-right-length 80
+
+set -g @primary-color "blue"
+set -g @secondary-color "red"
+
+set -g @left-bg-list "blue, black"
+set -g @left-fg-list "black, blue"
+set -g @right-bg-list "blue, black"
+set -g @right-fg-list "black, blue"
+
+#automatic window restore
+set -g @continuum-restore 'on'
+
+run '~/.tmux/plugins/tpm/tpm'

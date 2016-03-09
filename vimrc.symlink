@@ -1,0 +1,41 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
+filetype plugin indent on
+
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts = 1
+set t_Co=256
+
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+
+set number
+set laststatus=2
+
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+set autoread
+set backspace=indent,eol,start
+set history=1000 " change history to 1000
+
+set encoding=utf8
+
