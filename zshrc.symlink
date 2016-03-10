@@ -6,7 +6,7 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 export DEFAULT_USER=`whoami`
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,14 +86,4 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /etc/proxy_environment
 export GIT_SSL_NO_VERIFY=true
-source $HOME/antigen.zsh
-
 export TERM=xterm-256color
-#if [[ $TERM == "linux" ]]; then
-	#antigen theme gozilla
-#	export DISPLAY=:0
-	#TERM=fbterm tmux -2u
-	#eval `dircolors ~/.dircolors-fbterm`
-#fi
-#
-

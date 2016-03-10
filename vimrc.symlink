@@ -16,7 +16,7 @@ let g:airline_powerline_fonts = 1
 set t_Co=256
 
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 let g:solarized_termcolors=256
 
