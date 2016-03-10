@@ -14,10 +14,3 @@ for file in $linkables ; do
         ln -s $file $target
     fi
 done
-
-
-echo "\nCreating vim symlinks"
-echo "=============================="
-
-ln -s $DOTFILES/nvim ~/.vim
-ln -s $DOTFILES/nvim/init.vim ~/.vimrc
