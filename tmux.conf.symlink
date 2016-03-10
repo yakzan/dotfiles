@@ -45,7 +45,7 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'a-morales/stylux'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
-
+set -g @plugin 'seebi/tmux-colors-solarized'
 
 set -g @seperators "powerline"
 #set -g @seperators 'dithered'
@@ -68,4 +68,5 @@ set -g @right-fg-list "black, blue"
 #automatic window restore
 set -g @continuum-restore 'on'
 
+set -g @colors-solarized 'light'
 run '~/.tmux/plugins/tpm/tpm'
