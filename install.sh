@@ -11,8 +11,8 @@ sudo -E apt-get -y install git zsh curl tmux vim neovim
 sh -c "$(curl -fsSLk https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 cd install;
 ./link.sh
-
 
