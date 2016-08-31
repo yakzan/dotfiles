@@ -12,6 +12,8 @@ sh -c "$(curl -fsSLk https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/unixorn/warhol.plugin.zsh.git ~/.oh-my-zsh/custom/plugins/warhol
+sed -i 's/plugins=\(/plugins=\(warhol /' ~/.zshrc
 
 cd install;
 ./link.sh
