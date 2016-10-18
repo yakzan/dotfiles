@@ -14,7 +14,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/unixorn/warhol.plugin.zsh.git ~/.oh-my-zsh/custom/plugins/warhol
 sed -i 's/plugins=\(/plugins=\(warhol /' ~/.zshrc
-sed -i 's/setopt\ share_history/#setopt\ share_history/g' ~/.oh-my-zsh/lib/history.zsh
+#sed -i 's/setopt\ share_history/#setopt\ share_history/g' ~/.oh-my-zsh/lib/history.zsh
+echo "unsetopt share_history" >> ~/.zshrc
 
 cd install;
 ./link.sh
