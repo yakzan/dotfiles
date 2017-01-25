@@ -258,6 +258,7 @@ Hotkey, <#<+Right, Off
 Hotkey, <#<+Left, Off
 }
 return
+#MaxHotkeysPerInterval 1000 
 $WheelUp::
 Send {WheelDown}
 Return
