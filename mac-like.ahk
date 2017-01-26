@@ -1,3 +1,7 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;Autohotkey script to translate some Mac shortcuts for Windows
 ;Use Alt key instead of control key (Alt key is at the same place of Cmd on Mac)
 ;On Mac all hotkeys often used are: cmd+c, cmd+v, ... -> ctrl+c, ctrl+v, ... (on PC)
@@ -80,11 +84,11 @@ LAlt & w::Send {LCtrl Down}{w}{LCtrl Up}
 LAlt & x::Send {LCtrl Down}{x}{LCtrl Up}
 LAlt & y::Send {LCtrl Down}{y}{LCtrl Up}
 LAlt & z::Send {LCtrl Down}{z}{LCtrl Up}
-LAlt & SPACE::Send {LCtrl Down}{SPACE}{LCtrl Up}
+;LAlt & SPACE::Send {LCtrl Down}{SPACE}{LCtrl Up}
 
 LCtrl & a::Send {LAlt Down}{a}{LAlt Up}
 LCtrl & b::Send {LAlt Down}{b}{LAlt Up}
-LCtrl & c::Send {LAlt Down}{c}{LAlt Up}
+;LCtrl & c::Send {LAlt Down}{c}{LAlt Up}
 LCtrl & d::Send {LAlt Down}{d}{LAlt Up}
 LCtrl & e::Send {LAlt Down}{e}{LAlt Up}
 LCtrl & f::Send {LAlt Down}{f}{LAlt Up}
@@ -98,7 +102,7 @@ LCtrl & m::Send {LAlt Down}{m}{LAlt Up}
 LCtrl & n::Send {LAlt Down}{n}{LAlt Up}
 LCtrl & o::Send {LAlt Down}{o}{LAlt Up}
 LCtrl & p::Send {LAlt Down}{p}{LAlt Up}
-LCtrl & q::Send {LAlt Down}{q}{LAlt Up}
+;LCtrl & q::Send {LAlt Down}{q}{LAlt Up}
 LCtrl & r::Send {LAlt Down}{r}{LAlt Up}
 LCtrl & s::Send {LAlt Down}{s}{LAlt Up}
 LCtrl & t::Send {LAlt Down}{t}{LAlt Up}
